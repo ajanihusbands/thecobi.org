@@ -26,6 +26,7 @@
   }
 
   html { scroll-behavior: smooth; }
+  #mission, #history, #activities, #contact { scroll-margin-top: 80px; }
 
   body {
     font-family: 'Source Sans 3', sans-serif;
@@ -484,18 +485,18 @@
 
 <!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#"><span>COBI</span> — The Cheese on Bread Initiative</a>
+  <a class="nav-logo" href="#top"><span>COBI</span> — The Cheese on Bread Initiative</a>
   <ul class="nav-links">
-    <li><a href="#">Our Mission</a></li>
-    <li><a href="#">Our History</a></li>
-    <li><a href="#">Activities</a></li>
-    <li><a class="nav-contact" href="#">Contact Us</a></li>
+    <li><a href="#mission">Our Mission</a></li>
+    <li><a href="#history">Our History</a></li>
+    <li><a href="#activities">Activities</a></li>
+    <li><a class="nav-contact" href="#contact">Contact Us</a></li>
     <li><a class="nav-donate" href="https://www.paypal.com/donate/?hosted_button_id=UYLDT6TC4YXR2" target="_blank">Donate</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="top">
   <div class="hero-left">
     <p class="hero-eyebrow">Barbados · Education · Community</p>
     <h1 class="hero-headline">
@@ -509,7 +510,7 @@
     </p>
     <div class="hero-actions">
       <a class="btn-primary" href="https://www.paypal.com/donate/?hosted_button_id=UYLDT6TC4YXR2" target="_blank">Donate Today</a>
-      <a class="btn-ghost" href="#">Our Story</a>
+      <a class="btn-ghost" href="#history">Our Story</a>
     </div>
   </div>
   <div class="hero-right">
@@ -533,7 +534,7 @@
 </div>
 
 <!-- MISSION -->
-<section class="section">
+<section class="section" id="mission">
   <div class="mission-grid">
     <div class="mission-text">
       <p class="section-label">Our Mission</p>
@@ -548,7 +549,7 @@
         We believe education is the great equalizer — and that every child, regardless of 
         circumstance, deserves a fair chance at a bright future.
       </p>
-      <a href="#">Read our full mission</a>
+      <a href="#mission">Read our full mission</a>
     </div>
     <div>
       <div class="stat-card-single">
@@ -561,7 +562,7 @@
 </section>
 
 <!-- STORY -->
-<section class="story-section">
+<section class="story-section" id="history">
   <div class="story-inner">
     <p class="section-label">Our History</p>
     <p class="story-pull">
@@ -583,7 +584,7 @@
         COBI strives to be that same piece of cheese for the next generation.
       </p>
     </div>
-    <a class="story-link" href="#">Read our full history</a>
+    <a class="story-link" href="#history">Read our full history</a>
   </div>
 </section>
 
@@ -614,7 +615,7 @@
 </section>
 
 <!-- CURRENT ACTIVITIES -->
-<section class="activities-section">
+<section class="activities-section" id="activities">
   <div class="activities-inner">
     <p class="section-label">Current Activities</p>
     <h2>What we're working on right now</h2>
@@ -657,7 +658,7 @@
 </section>
 
 <!-- CTA -->
-<section class="cta-section">
+<section class="cta-section" id="contact">
   <h2>Be someone's <em>cheese on bread.</em></h2>
   <p>
     A small act of generosity can change the trajectory of a child's life. 
@@ -665,7 +666,7 @@
     Barbadian students who need it most.
   </p>
   <a class="btn-gold" href="https://www.paypal.com/donate/?hosted_button_id=UYLDT6TC4YXR2" target="_blank">Donate Now</a>
-  <a class="btn-outline" href="#">Contact Us</a>
+  <a class="btn-outline" href="#contact">Contact Us</a>
 </section>
 
 <!-- FOOTER -->
@@ -677,17 +678,17 @@
   <div>
     <h4>Navigate</h4>
     <ul>
-      <li><a href="#">Our Mission</a></li>
-      <li><a href="#">Our History</a></li>
-      <li><a href="#">Current Activities</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#mission">Our Mission</a></li>
+      <li><a href="#history">Our History</a></li>
+      <li><a href="#activities">Current Activities</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
   </div>
   <div>
     <h4>Support COBI</h4>
     <ul>
       <li><a href="https://www.paypal.com/donate/?hosted_button_id=UYLDT6TC4YXR2" target="_blank">Donate via PayPal</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
   </div>
 </footer>
