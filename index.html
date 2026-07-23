@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>COBI — The Cheese on Bread Initiative</title>
+<title>Our History — The Cheese on Bread Initiative</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
@@ -479,196 +479,143 @@
     footer { grid-template-columns: 1fr; padding: 3rem 1.5rem; }
     .activity-details { gap: 1.5rem; }
   }
+
+  /* ── HISTORY PAGE ── */
+  .page-hero {
+    padding: 10rem 4.5rem 5rem;
+    background: var(--navy);
+    position: relative; overflow: hidden;
+    text-align: center;
+  }
+  .page-hero::after {
+    content: ''; position: absolute;
+    bottom: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  }
+  .page-hero .section-label { justify-content: center; color: var(--gold-light); }
+  .page-hero .section-label::before { background: var(--gold-light); }
+  .page-hero h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    font-weight: 700; color: white;
+    line-height: 1.15; margin-top: 0.5rem;
+  }
+  .page-hero h1 em { font-style: italic; font-weight: 400; color: var(--gold-light); }
+
+  .history-body { max-width: 760px; margin: 0 auto; padding: 6rem 4.5rem; }
+  .history-body .lead {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic; font-size: clamp(1.3rem, 2vw, 1.7rem);
+    line-height: 1.5; color: var(--navy);
+    margin-bottom: 3rem;
+    padding-left: 1.5rem; border-left: 3px solid var(--gold);
+  }
+  .history-body p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300; font-size: 1.05rem; line-height: 1.9;
+    color: var(--muted); margin-bottom: 1.5rem;
+  }
+  .history-body .exhortation {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic; font-weight: 400;
+    color: var(--ocean);
+  }
+  .history-back {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    margin-top: 2rem;
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--ocean); font-weight: 600; font-size: 0.8rem;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(26,92,138,0.4);
+    padding-bottom: 0.15rem;
+    transition: gap 0.2s, color 0.2s, border-color 0.2s;
+  }
+  .history-back::before { content: '←'; }
+  .history-back:hover { gap: 0.8rem; color: var(--gold); border-color: var(--gold); }
+
+  @media (max-width: 900px) {
+    .page-hero { padding: 8rem 1.5rem 4rem; }
+    .history-body { padding: 4rem 1.5rem; }
+  }
+
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
-  <a class="nav-logo" href="#top"><span>COBI</span> — The Cheese on Bread Initiative</a>
+  <a class="nav-logo" href="index.html"><span>COBI</span> — The Cheese on Bread Initiative</a>
   <ul class="nav-links">
-    <li><a href="#mission">Our Mission</a></li>
-    <li><a href="#history">Our History</a></li>
-    <li><a href="#activities">Activities</a></li>
+    <li><a href="index.html#mission">Our Mission</a></li>
+    <li><a href="history.html">Our History</a></li>
+    <li><a href="index.html#activities">Activities</a></li>
     <li><a class="nav-contact" href="mailto:ajani.husbands@gmail.com">Contact Us</a></li>
     <li><a class="nav-donate" href="https://www.paypal.com/donate/?hosted_button_id=UYLDT6TC4YXR2" target="_blank">Donate</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
-<section class="hero" id="top">
-  <div class="hero-left">
-    <p class="hero-eyebrow">Barbados · Education · Community</p>
-    <h1 class="hero-headline">
-      Because every child deserves a piece of <em>cheese</em> on their <em>bread.</em>
-    </h1>
-    <p class="hero-sub">
-      COBI expands educational opportunities for Barbadian children — 
-      providing the tools, mentorship, and resources to help them 
-      thrive academically and beyond.
-    </p>
-    <div class="hero-actions">
-      <a class="btn-primary" href="https://www.paypal.com/donate/?hosted_button_id=UYLDT6TC4YXR2" target="_blank">Donate Today</a>
-      <a class="btn-ghost" href="#history">Our Story</a>
-    </div>
-  </div>
-  <div class="hero-right">
-    <img class="hero-img"
-      src="https://images.squarespace-cdn.com/content/v1/6790c9efd2df8071307a7cbf/a5dbf28e-72d9-429b-9ec9-b52164ef37df/pexels-akoonie-16890028.jpg"
-      alt="A young child playing in the water"
-    >
-    <div class="hero-overlay"></div>
-    <blockquote class="hero-quote">
-      "To whom much is given, much is required."
-      <cite>— Daphne Young, matriarch &amp; inspiration of COBI</cite>
-    </blockquote>
-  </div>
+
+<section class="page-hero">
+  <p class="section-label">Our History</p>
+  <h1>The story behind<br><em>the cheese on bread.</em></h1>
 </section>
 
-<!-- BAND -->
-<div class="band">
-  <div class="band-item"><span class="band-dot"></span>Founded by Barbadians in the Diaspora</div>
-  <div class="band-item"><span class="band-dot"></span>Focused on Educational Access</div>
-  <div class="band-item"><span class="band-dot"></span>Community-Rooted &amp; Values-Driven</div>
-</div>
-
-<!-- MISSION -->
-<section class="section" id="mission">
-  <div class="mission-grid">
-    <div class="mission-text">
-      <p class="section-label">Our Mission</p>
-      <h2>Expanding <em>opportunity</em><br>for Barbadian children</h2>
-      <p>
-        COBI was founded by Barbadians in the diaspora with a simple yet powerful mission: 
-        to expand educational opportunities for Barbadian children. By collaborating with 
-        organisations and individuals across Barbados, COBI provides the tools, mentorship, 
-        and resources needed to help children thrive.
-      </p>
-      <p>
-        We believe education is the great equalizer — and that every child, regardless of 
-        circumstance, deserves a fair chance at a bright future.
-      </p>
-      <a href="#mission">Read our full mission</a>
-    </div>
-    <div>
-      <div class="stat-card-single">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Community-Funded</div>
-        <p class="stat-desc">Every dollar donated goes directly toward supporting educational programmes for children in Barbados. We are a volunteer-run initiative with no administrative overhead.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- STORY -->
-<section class="story-section" id="history">
-  <div class="story-inner">
-    <p class="section-label">Our History</p>
-    <p class="story-pull">
-      She would literally go without to feed a stranger —
-      <strong>that was our mother, Daphne Young.</strong>
-    </p>
-    <div class="story-body">
-      <p>
-        COBI was inspired by the enduring legacy of Daphne Young and her mother Gertrude Murrell. 
-        Their unwavering faith, generosity, and spirit shaped not just a family, but a community. 
-        They gave from what little they had — and their example lives on in this initiative.
-      </p>
-      <p>
-        The name "Cheese on Bread" honours people like Ms. Marshall, the local shopkeeper who extended 
-        credit to struggling families, and Ms. Carter, who bought school bus tickets week after week — 
-        ensuring that children could keep learning, no matter what.
-      </p>
-      <p>
-        COBI strives to be that same piece of cheese for the next generation.
-      </p>
-    </div>
-    <a class="story-link" href="history.html">Read our full history</a>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="how-section">
-  <div class="section-header">
-    <p class="section-label">How We Help</p>
-    <h2>Three pillars of support</h2>
-    <p>We take a holistic approach to educational support — addressing resources, mentorship, and community partnership together.</p>
-  </div>
-  <div class="pillars">
-    <div class="pillar">
-      
-      <h3>Tools &amp; Resources</h3>
-      <p>Providing school supplies, learning materials, and access to technology so no child is held back by what they lack.</p>
-    </div>
-    <div class="pillar">
-      
-      <h3>Mentorship</h3>
-      <p>Connecting Barbadian children with mentors in the diaspora and at home who can guide them academically and professionally.</p>
-    </div>
-    <div class="pillar">
-      
-      <h3>Community Partnerships</h3>
-      <p>Collaborating with organisations across Barbados to scale our impact and reach the children who need it most.</p>
-    </div>
-  </div>
-</section>
-
-<!-- CURRENT ACTIVITIES -->
-<section class="activities-section" id="activities">
-  <div class="activities-inner">
-    <p class="section-label">Current Activities</p>
-    <h2>What we're working on right now</h2>
-    <div class="activity-card">
-      <div class="activity-accent"></div>
-      <div class="activity-body">
-        <h3>UWI Undergraduate Scholarship — First Award 2026–2027</h3>
-        <p>
-          COBI has been approved by the University of the West Indies (UWI) Scholarship Committee, 
-          marking a significant milestone in our mission. We are now positioned to award our first 
-          scholarship for the 2026–2027 academic year.
-        </p>
-        <p>
-          COBI is committed to supporting one UWI student each year with a stipend to assist with 
-          living and academic expenses over the course of a three-year undergraduate programme. 
-          The scholarship is awarded strictly on the basis of financial need, ensuring that it 
-          reaches students who would otherwise be unable to pursue a university education.
-        </p>
-        <div class="activity-details">
-          <div class="detail-item">
-            <span class="detail-label">Annual Stipend</span>
-            <span class="detail-value highlight">USD $3,000</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-label">Programme Length</span>
-            <span class="detail-value">3 Years</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-label">First Award</span>
-            <span class="detail-value">2026–2027</span>
-          </div>
-          <div class="detail-item">
-            <span class="detail-label">Selection Basis</span>
-            <span class="detail-value">Financial Need</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-section" id="contact">
-  <h2>Be someone's <em>cheese on bread.</em></h2>
-  <p>
-    A small act of generosity can change the trajectory of a child's life. 
-    Your donation helps fund scholarships and educational support for 
-    Barbadian students who need it most.
+<article class="history-body">
+  <p class="lead">
+    The Cheese On Bread Initiative was inspired by the enduring legacy of our mother,
+    Daphne Young, and grandmother, Gertrude Murrell — whose faith, spirit, and generosity
+    continue to live on in the stories we share with our children and grandchildren.
   </p>
-  <a class="btn-gold" href="https://www.paypal.com/donate/?hosted_button_id=UYLDT6TC4YXR2" target="_blank">Donate Now</a>
-  <a class="btn-outline" href="mailto:ajani.husbands@gmail.com">Contact Us</a>
-</section>
 
-<!-- FOOTER -->
+  <p>
+    Their unwavering faith, indomitable spirits, and generosity not only shaped our lives
+    but continue to live on in the stories we tell. <span class="exhortation">"To whom much
+    is given, much is required,"</span> and <span class="exhortation">"Do good, and good will
+    attend you until you die."</span> These words were their constant daily exhortations.
+  </p>
+
+  <p>
+    We watched them embody these values every day, always willing to give and share from the
+    little they had. Many times, we shared our meager meals and cramped one-roof home with a
+    family in need. Our mother would literally go without to feed a stranger.
+  </p>
+
+  <p>
+    It truly took a village. Without the kindness and generosity of many in Nursery Lane and
+    Four Roads, our journey into adulthood would have been far more difficult. The community's
+    support played a crucial role in our survival and growth.
+  </p>
+
+  <p>
+    There were people like Ms. Marshall, the local shopkeeper, who extended credit to struggling
+    families, even when their balance remained unpaid. Without her generosity, many in the
+    neighborhood would have gone to bed hungry, uncertain of where their next meal would come from.
+    She was not only the bread but the cheese on our bread many times over.
+  </p>
+
+  <p>
+    Then there was Ms. Carter, who faithfully purchased school bus tickets week after week, even
+    if she was still owed for the previous ones. Her kindness ensured that we could continue our
+    education — an opportunity that was never guaranteed.
+  </p>
+
+  <p>
+    To our mother and grandmother, to these two women, and to all those in Nursery Lane and Four
+    Roads who, in some way, gave us a piece of cheese — we offer our deepest gratitude. We owe you
+    a debt we can never fully repay, and for that, we honor you with a heartfelt thank you.
+  </p>
+
+  <p>
+    Inspired by this legacy, COBI is committed to ensuring that Barbadian children have access to
+    the educational opportunities they deserve. Just as our mother and grandmother were our guiding
+    light, we strive to be the "cheese on bread" for the next generation — helping to provide the
+    support, mentorship, and resources to help them thrive.
+  </p>
+
+  <a class="history-back" href="index.html">Back to home</a>
+</article>
+
+
 <footer>
   <div>
     <div class="footer-brand"><span>COBI</span> — The Cheese on Bread Initiative, Inc.</div>
@@ -677,9 +624,9 @@
   <div>
     <h4>Navigate</h4>
     <ul>
-      <li><a href="#mission">Our Mission</a></li>
-      <li><a href="#history">Our History</a></li>
-      <li><a href="#activities">Current Activities</a></li>
+      <li><a href="index.html#mission">Our Mission</a></li>
+      <li><a href="history.html">Our History</a></li>
+      <li><a href="index.html#activities">Current Activities</a></li>
       <li><a href="mailto:ajani.husbands@gmail.com">Contact Us</a></li>
     </ul>
   </div>
@@ -692,7 +639,7 @@
   </div>
 </footer>
 <div class="footer-bottom">
-  © 2025 The Cheese on Bread Initiative, Inc. &nbsp;·&nbsp; All rights reserved.
+  © 2025 The Cheese on Bread Initiative, Inc. &nbsp;·&nbsp; All rights reserved. &nbsp;·&nbsp; The Cheese on Bread Initiative, Inc. is a 501(c)(3) tax-exempt organization.
 </div>
 
 </body>
